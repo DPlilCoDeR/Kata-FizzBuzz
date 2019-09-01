@@ -3,27 +3,26 @@
 namespace FizzBuzz; //Apellido especifico
 
 class Kata 
-{
+{   
+        private $divisor3 = 3;
+        private $divisor5 = 5;
+        private $fizz = 'Fizz';
+        private $buzz = 'Buzz';
+        private $fizzbuzz = 'FizzBuzz';
     function devolverNumero($num) //Funcion que ejecuta la logica
     {   
-        $divisor3 = 3;
-        $divisor5 = 5;
-        $fizz = 'Fizz';
-        $buzz = 'Buzz';
-        $fizzbuzz = 'FizzBuzz' ;
-
-        if ($num % $divisor3 == 0 and $num % $divisor5 == 0)
+        
+        if ($num % $this->divisor3 == 0 and $num % $this->divisor5 == 0)
         {
-            return $fizzbuzz;
+            return $this->fizzbuzz;
         }
-        if ($num % $divisor5 == 0)
+        if ($num % $this->divisor5 == 0)
         {
-            return $buzz;
+            return $this->buzz;
         }
-        if ($num % $divisor3 == 0) 
+        if ($num % $this->divisor3 == 0) 
         {
-            return $fizz;
-            
+            return $this->fizz;
         }
         return $num;
     }

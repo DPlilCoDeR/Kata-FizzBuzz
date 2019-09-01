@@ -4,7 +4,7 @@ use FizzBuzz\Kata; // Usando el Archivo Kata para poder instanciar un objeto de 
 use PHPUnit\Framework\TestCase; // Usando la libreria de PHPUnit
 
 class Katatest extends TestCase //El extends es para que Katatest pueda Heredar de TestCase
-{
+{    
     function testDevuelveElNumeroSiNoEsDivisiblePorTresNiPorCinco () //1 : preparar escenario, 2:
     {   //Creo un "escenario" que seria preparar los elementos necesarios
         $num = 1;
